@@ -75,7 +75,6 @@
    </div>
    </div>
    
-
     <!--------------------------Work Section---------------------------->
 
     <br><br><br>
@@ -186,7 +185,7 @@
     <!----------------------------------Form Fillup Section---------------------------------------->
 
     <div class="contact-right">
-    <form id="contactForm">
+    <form id="contactForm" action="https://formspree.io/f/mgvygoyb" method="POST">
       <input type="text" name="Name" placeholder="Your Name" required>
        <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -194,34 +193,6 @@
     </form>
     </div>
     </div>
-
-    <script>
-  const form = document.getElementById("contactForm");
-
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault(); // page reload hone se rokta hai
-
-    // Yeh user ke input values hai
-    const formData = {
-      Name: form.Name.value,
-      email: form.email.value,
-      Message: form.Message.value,
-    };
-
-    // Fetch ke through backend pe POST request ja rahi hai
-    const response = await fetch("http://localhost:3000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
-
-    const result = await response.text();
-    alert(result);  // success ya error ka message dikhega
-    form.reset();   // form clean ho jayega
-  });
-</script>
 
     <div class="copyright">
     <p>Copyright © Mahek. ❤️🖤🤍</p></div>
@@ -248,7 +219,7 @@
     sidemenu.style.right = "0";
   }
    function closemenu(){
-    sidemenu.style.right = "-188px";
+    sidemenu.style.right = "-200px";
 
   }
 </script>
