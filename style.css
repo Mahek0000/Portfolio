@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-size: 16px;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
     background: #080808;
     color: #fff;
@@ -451,6 +454,10 @@ form input, form textarea{
 /* ===================== */
 nav .fa-solid{
   display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  
 }
 @media (max-width: 768px) {
 
@@ -489,6 +496,7 @@ nav .fa-solid{
   nav .fa-solid{
   display:block;
   font-size: 25px;
+  
 }
 nav ul{
   background: #ff004f;
@@ -512,7 +520,6 @@ nav ul .fa-solid{
   cursor: pointer;
 }
   
-
   /* Hero Section */
   .hero {
     display: flex;
