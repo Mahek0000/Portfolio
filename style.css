@@ -34,7 +34,6 @@ body{
 .logo{
     color: #fff;
     font-family: Verdana;
-    font-size: 24px;
     margin-left: 30px;
    
 }
@@ -68,54 +67,7 @@ body{
     width: 100%;
 }
 
-.header {
-  position: absolute;
-  top: 20px;
-  left: 30px;
-  color: white;
-}
-
-.logo h1 {
-  font-size: 28px;
-  margin: 0;
-  line-height: 1.2;
-  color: white;
-  font-family: 'Verdana', sans-serif;
-  letter-spacing: 1px;
-}
-.logo{
-     overflow: visible;
-    padding-top: 10px;
-}
-
-
 /* Reset default margin & padding */
-
-body {
-  background-color: #000;
-  color: white;
-  font-family: Arial, sans-serif;
-}
-
-/* Navbar styling (optional, for completeness) */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-}
 
 .hero {
   display: flex;
@@ -125,12 +77,8 @@ body {
   min-height: 70vh;
 }
 
-.content {
-  max-width: 600px;
-}
-
 .logo {
-  font-size: 30px;
+  font-size: 100px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -147,7 +95,7 @@ body {
 
 .role{
   color: #ff4c60;
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 10px;
   border-right: 2px solid white;
   width: fit-content;
@@ -166,11 +114,12 @@ body {
    
 
 .intro{
-  font-size: 28px;
+  font-size: 38px;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .ms span{
+   font-size: 38px;
   display: inline-block;
   transform: translateY(-100px);
   opacity: 0;
@@ -193,11 +142,6 @@ body {
     transform: translate(0);
     opacity: 1;
   }
-}
-
-.image img {
-  height: 400px;
-  object-fit: contain;
 }
 /*---------------about---------------*/
 
@@ -537,13 +481,13 @@ nav ul .fa-solid{
     margin-bottom: 10px;
   }
   .role {
-    font-size: 16px;
+    font-size: 30px;
     margin-bottom: 5px;
     color: #ff4c60;
   }
 
   .intro {
-    font-size: 18px;
+    font-size: 38px;
     margin-bottom: 10px;
   }
   .image img {
