@@ -30,11 +30,6 @@ body{
     position: absolute;
     top: 0;
     width: 100%;
-}
-.logo{
-    color: #fff;
-    font-family: Verdana;
-    margin-left: 30px;
    
 }
 .nav-links{
@@ -44,6 +39,7 @@ body{
 }
 .nav-links li{
     list-style: none;
+   
 }
 .nav-links a{
     color: white;
@@ -67,7 +63,6 @@ body{
     width: 100%;
 }
 
-/* Reset default margin & padding */
 
 .hero {
   display: flex;
@@ -76,45 +71,34 @@ body{
   padding: 60px;
   min-height: 70vh;
 }
+ #typed {
+    font-size: 32px; /* You can change this to 40px or 50px as you like */
+    font-weight: bold;
+     color: #ff4c60;
+  }
 
-.logo {
-  font-size: 100px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
 
 .m-letter {
   color: #ff4c60;
   animation: colorShift 3s infinite alternate;
+    font-size: 2rem;     /* Ye size tu apne hisab se bada ya chhota kar sakti hai */
+  font-weight: bold;
+
+  position: absolute;    /* Positioning activate hoti hai yaha se */
+  top: 10px;             /* Top se kitna distance chahiye */
+  left: 15px;            /* Left se kitna distance chahiye */
+  z-index: 999;          /* Sabke upar rahe */
 }
 @keyframes colorShift {
   0%{color:red;}
+  25%{color:palevioletred}
   50%{color:yellow}
+  75%{color: #ff6b81}
   100%{color:cyan}
 }
 
-.role{
-  color: #ff4c60;
-  font-size: 25px;
-  margin-bottom: 10px;
-  border-right: 2px solid white;
-  width: fit-content;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 3s steps(16) forwards, blink 0.7s infinite;
-}
- @keyframes typing {
-      from { width: 0 }
-      to { width: 16ch }
-    }
-
-    @keyframes blink {
-      50% { border-color: transparent; }
-    }  
-   
-
 .intro{
-  font-size: 38px;
+  font-size: 48px;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
